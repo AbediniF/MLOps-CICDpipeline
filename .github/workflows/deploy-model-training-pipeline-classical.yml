@@ -1,13 +1,13 @@
 name: deploy-model-training-pipeline
 
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch: # Add this line to enable manual triggers
+  #push:
+    #branches:
+     # - main
+  #pull_request:
+   # branches:
+    #  - main
 
 jobs:
   get-config:
